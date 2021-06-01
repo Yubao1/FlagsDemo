@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xe.demo.flagsdemo.MainActivity">
+   <TextView
+       android:id="@+id/tv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+   <Button
+       android:id="@+id/btn_flag_activity_clear_task"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Intent.FLAG_ACTIVITY_CLEAR_TASK标志位"
+       android:onClick="onClick"
+       android:textAllCaps="false"/>
+   <Button
+       android:id="@+id/btn_flag_activity_new_task"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Intent.FLAG_ACTIVITY_NEW_TASK标志位"
+       android:onClick="onClick"
+       android:visibility="gone"
+       android:textAllCaps="false"/>
+   <Button
+       android:id="@+id/btn_flag_activity_single_top"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Intent.FLAG_ACTIVITY_SINGLE_TOP标志位"
+       android:onClick="onClick"
+       android:textAllCaps="false"/>
+   <Button
+       android:id="@+id/btn_flag_activity_reorder_to_front"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Intent.FLAG_ACTIVITY_REORDER_TO_FRONT标志位"
+       android:onClick="onClick"
+       android:textAllCaps="false"/>
+
+</LinearLayout>
